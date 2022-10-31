@@ -1,0 +1,66 @@
+.Section {
+  font-family: $font-primary;
+  margin-left: 141.5px;
+  max-width: 990px;
+  padding: 16px 16px 32px;
+
+  &-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.25;
+    margin-bottom: 25px;
+  }
+
+  &-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  &-version {
+    background-color: $lightest-gray;
+    border: 1px solid $lightest-gray;
+    border-radius: 6.4px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 4px 8px;
+  }
+
+  &-articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+
+  &-edition {
+    display: flex;
+    margin: 48px 0;
+    justify-content: space-between;
+  }
+
+  &-edit {
+    color: $orange;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &-icon{
+    margin-right: 5px;
+  }
+
+  &-editedBy {
+    font-size: 13.3333px;
+    font-style: italic;
+
+    &.bold {
+      font-weight: 700;
+    }
+  }
+}

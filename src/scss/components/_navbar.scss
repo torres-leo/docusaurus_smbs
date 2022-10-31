@@ -1,0 +1,52 @@
+.Navbar {
+  align-items: center;
+  background-color: $white;
+  box-shadow: $navbar-shadow;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  margin: 0;
+  padding: 8px 16px;
+  width: 100%;
+
+  &-logo {
+    height: 36px;
+    width: 100%;
+  }
+
+  &-list {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &-items {
+    color: $black;
+    font-family: $font-primary;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 4px 12px;
+    text-decoration: none;
+    position: relative;
+
+    &:hover {
+      color: $orange;
+    }
+
+    &.Submenu {
+      &:hover {
+        .Dropdown {
+          opacity: 1;
+          transform: translateY(1px);
+          visibility: visible;
+        }
+      }
+    }
+  }
+
+  &-icon {
+    font-size: 24px;
+  }
+}
