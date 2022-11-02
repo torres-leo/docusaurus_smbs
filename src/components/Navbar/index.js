@@ -4,6 +4,7 @@ import Image from "../Image";
 import Logo from "../../assets/brand/logo.jpeg";
 import Search from "../Search";
 import Dropdown from "../Dropdown";
+import Button from "../Button";
 
 const options = [
   {
@@ -50,16 +51,20 @@ const Navbar = () => {
         </li>
       </ul>
       <ul className="Navbar-list">
-        <Dropdown className="Navbar-items Submenu" options={options} />
+        <Dropdown
+          className="Navbar-items Submenu"
+          options={options}
+          defaultOption={options[0].label}
+        />
         <li>
-          <Link className="Navbar-items" to="/">
+          <a href="https://gitlab.com/smbs-bootcamp">
             <Icon className="fa-brands fa-square-gitlab Navbar-icon" />
-          </Link>
+          </a>
         </li>
         <li>
-          <Link className="Navbar-items" to="/">
-            <Icon className="fa-regular fa-sun-bright Navbar-icon" />
-          </Link>
+          <Button className="Navbar-theme">
+            <Icon className="fa-regular fa-sun-bright" />
+          </Button>
         </li>
         <li>
           <Search />

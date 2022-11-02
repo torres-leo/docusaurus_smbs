@@ -1,4 +1,65 @@
-.Sidebar{
-    background-color: rgb(233, 233, 233);
-    width: 300px;
+.Sidebar {
+  background-color: $white;
+  border-right: 1px solid $light-gray;
+  color: $gray;
+  width: 300px;
+  z-index: 1500;
+
+  .sidebar-nav {
+    padding: 8px;
+  }
+
+  .sidebar-brand {
+    background-color: $white;
+    cursor: pointer;
+    justify-content: flex-start;
+    padding-left: 16px;
+  }
+
+  .sidebar-toggler {
+    background-color: $white;
+    border-top: 1px solid $light-gray;
+    border-right: 1px solid $light-gray;
+    justify-content: center;
+  }
+
+  &-logo {
+    height: 32px;
+    width: 128px;
+  }
+
+  .nav-group {
+    &.show {
+      background-color: $white;
+      color: $gray;
+
+      .nav-group-toggle {
+        color: $gray;
+        padding-left: 12px;
+      }
+    }
+  }
+
+  .nav-group-items {
+    margin-left: 12px;
+  }
+
+  .nav-link {
+    color: $gray;
+    font-family: $font-primary;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    padding: 6px 12px;
+
+    &:hover {
+      color: $gray;
+      background-color: $item-background;
+    }
+
+    &.active {
+      color: $gray;
+      padding-left: 12px;
+    }
+  }
 }

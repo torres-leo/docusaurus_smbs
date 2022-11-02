@@ -8,9 +8,6 @@ import Icon from "../components/Icon";
 const Docs = () => {
   return (
     <div className="Docs">
-      <div className="Sidebar">
-        <p>*inserte sidebar*</p>
-      </div>
       <Section title="Advanced Tutorials">
         <p className="Section-text">
           This section is not going to be very structured, but we will cover the
@@ -49,7 +46,7 @@ const Docs = () => {
 
         <div className="Section-edition">
           <Link className="Section-edit">
-            <Icon className="fa-solid fa-pencil Section-icon"/>
+            <Icon className="fa-solid fa-pencil Section-icon" />
             <span>Edit this page</span>
           </Link>
           <p className="Section-editedBy">

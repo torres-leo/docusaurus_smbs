@@ -8,6 +8,7 @@
   margin: 0;
   padding: 8px 16px;
   width: 100%;
+  z-index: 100;
 
   &-logo {
     height: 36px;
@@ -28,25 +29,53 @@
     font-size: 16px;
     font-weight: 500;
     padding: 4px 12px;
-    text-decoration: none;
     position: relative;
+    text-decoration: none;
+    transition: color $transition;
 
     &:hover {
       color: $orange;
     }
 
     &.Submenu {
+      padding: 8px 12px;
+
       &:hover {
+        color: $black;
+
         .Dropdown {
           opacity: 1;
-          transform: translateY(1px);
+          pointer-events: all;
+          transform: translateY(-1px);
           visibility: visible;
         }
       }
     }
   }
 
-  &-icon {
+  &-theme{
+    background-color: $white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
     font-size: 24px;
+    height: 32px;
+    margin-right: 12px;
+    transition: background-color $transition;
+    width: 32px;
+    
+    &:hover{
+      background-color: $lightest-gray;
+    }
+  }
+
+  &-icon {
+    color: $black;
+    font-size: 24px;
+    padding: 4px 12px;
+
+    &:hover{
+      opacity: 0.6;
+    }
   }
 }
