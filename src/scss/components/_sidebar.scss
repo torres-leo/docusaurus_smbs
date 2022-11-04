@@ -21,6 +21,16 @@
     border-top: 1px solid $light-gray;
     border-right: 1px solid $light-gray;
     justify-content: center;
+
+    &::before {
+      background-image: none;
+      content: "<<";
+      color: gray;
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -8px;
+      transition: .5s all ease;
+    }
   }
 
   &-logo {
@@ -36,6 +46,12 @@
       .nav-group-toggle {
         color: $gray;
         padding-left: 12px;
+      }
+    }
+
+    .nav-group-toggle {
+      &::after {
+        content: ">";
       }
     }
   }
@@ -60,6 +76,10 @@
     &.active {
       color: $gray;
       padding-left: 12px;
+    }
+
+    &::after {
+      background-image: none;
     }
   }
 }

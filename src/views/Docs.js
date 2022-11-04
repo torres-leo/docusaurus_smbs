@@ -8,7 +8,7 @@ import Icon from "../components/Icon";
 const Docs = () => {
   return (
     <div className="Docs">
-      <Section title="Advanced Tutorials">
+      <Section title="Advanced Tutorials">      
         <p className="Section-text">
           This section is not going to be very structured, but we will cover the
           following topics:
