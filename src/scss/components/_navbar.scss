@@ -1,81 +1,81 @@
 .Navbar {
-  align-items: center;
-  background-color: $white;
-  box-shadow: $navbar-shadow;
-  display: flex;
-  justify-content: space-between;
-  height: 60px;
-  margin: 0;
-  padding: 8px 16px;
-  width: 100%;
-  z-index: 100;
+	align-items: center;
+	background-color: $white;
+	box-shadow: $navbar-shadow;
+	display: flex;
+	justify-content: space-between;
+	height: 60px;
+	margin: 0;
+	padding: 8px 16px;
+	width: 100%;
+	z-index: 2000 !important;
 
-  &-logo {
-    height: 36px;
-    width: 100%;
-  }
+	&-logo {
+		height: 36px;
+		width: 100%;
+	}
 
-  &-list {
-    align-items: center;
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+	&-list {
+		align-items: center;
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
 
-  &-items {
-    color: $black;
-    font-family: $font-primary;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 4px 12px;
-    position: relative;
-    text-decoration: none;
-    transition: color $transition;
+	&-items {
+		color: $black;
+		font-family: $font-primary;
+		font-size: 16px;
+		font-weight: 500;
+		padding: 4px 12px;
+		position: relative;
+		text-decoration: none;
+		transition: color $transition;
 
-    &:hover {
-      color: $orange;
-    }
+		&:hover {
+			color: $orange;
+		}
 
-    &.Submenu {
-      padding: 8px 12px;
+		&.Submenu {
+			padding: 8px 12px;
 
-      &:hover {
-        color: $black;
+			&:hover {
+				color: $black;
 
-        .Dropdown {
-          opacity: 1;
-          pointer-events: all;
-          transform: translateY(-1px);
-          visibility: visible;
-        }
-      }
-    }
-  }
+				.Dropdown {
+					opacity: 1;
+					pointer-events: all;
+					transform: translateY(-1px);
+					visibility: visible;
+				}
+			}
+		}
+	}
 
-  &-theme{
-    background-color: $white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 24px;
-    height: 32px;
-    margin-right: 12px;
-    transition: background-color $transition;
-    width: 32px;
-    
-    &:hover{
-      background-color: $lightest-gray;
-    }
-  }
+	&-theme {
+		background-color: $white;
+		border: none;
+		border-radius: 50%;
+		cursor: pointer;
+		font-size: 24px;
+		height: 32px;
+		margin-right: 12px;
+		transition: background-color $transition;
+		width: 32px;
 
-  &-icon {
-    color: $black;
-    font-size: 24px;
-    padding: 4px 12px;
+		&:hover {
+			background-color: $lightest-gray;
+		}
+	}
 
-    &:hover{
-      opacity: 0.6;
-    }
-  }
+	&-icon {
+		color: $black;
+		font-size: 24px;
+		padding: 4px 12px;
+
+		&:hover {
+			opacity: 0.6;
+		}
+	}
 }
