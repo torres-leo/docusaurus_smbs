@@ -23,6 +23,7 @@ const AppSidebar = () => {
 			unfoldable={unfoldable}
 			visible={sidebarShow}
 			onVisibleChange={(visible) => {
+				// dispatch({ type: 'set', sidebarShow: visible });
 				dispatch({ type: 'set', sidebarShow: visible });
 			}}
 			className='Sidebar'

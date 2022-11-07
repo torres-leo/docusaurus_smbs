@@ -1,0 +1,29 @@
+.Modal {
+
+  &-form {
+    border: 1px solid $orange;
+    display: flex;
+    padding: 7px;
+    width: 100%;
+  }
+
+  &-icon {
+    color: $orange;
+  }
+
+  .modal-dialog {
+    margin-top: 60px;
+  }
+
+  .modal-content {
+    width: 562px;
+  }
+
+  .modal-header {
+    display: block;
+
+    .btn-close {
+      display: none;
+    }
+  }
+}
