@@ -8,7 +8,6 @@ const ContextProvider = ({ children }) => {
 
   const handleModal = () => {
     setVisible(!visible)
-    console.log("visible: ", visible)
   }
 
   return <AppContext.Provider value={{ visible, setVisible, handleModal }}>
