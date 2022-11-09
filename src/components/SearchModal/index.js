@@ -64,9 +64,6 @@ const SearchModal = () => {
         </div>
       </CModalBody>
       <CModalFooter>
-        {/* <CButton color='secondary' onClick={handleModal}>
-          Close
-        </CButton> */}
         <Image alt='logo' src={Logo} className='Modal-logo' />
 
       </CModalFooter>

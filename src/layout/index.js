@@ -10,13 +10,13 @@ const Layout = () => {
 		<Fragment>
 			<Router>
 				<Navbar />
-				<div>
+				<div className='Main'>
 					<AppSidebar />
 					<Routes>
 						<Route path='/' element={<Docs />} />
 					</Routes>
-					<Footer />
 				</div>
+				<Footer />
 			</Router>
 		</Fragment>
 	);
