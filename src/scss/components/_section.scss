@@ -1,6 +1,6 @@
 .Section {
   font-family: $font-primary;
-  margin-left: 300px;
+  margin-left: 400px;
   max-width: 990px;
   padding: 16px 16px 32px;
 
@@ -21,9 +21,11 @@
     background-color: $lightest-gray;
     border: 1px solid $lightest-gray;
     border-radius: 6.4px;
+    display: inline-block;
     font-size: 12px;
     font-weight: 700;
     line-height: 1;
+    margin-bottom: 0;
     padding: 4px 8px;
   }
 
@@ -51,7 +53,7 @@
     }
   }
 
-  &-icon{
+  &-icon {
     margin-right: 5px;
   }
 
@@ -63,4 +65,14 @@
       font-weight: 700;
     }
   }
+
+  &-breadcrumb {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  // &-icon {
+  //   background-color: gray;
+  //   display: inline-block;
+  // }
 }
