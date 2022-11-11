@@ -1,17 +1,16 @@
 import PropTypes from 'prop-types';
 import Icon from '../Icon';
+import { Link } from 'react-router-dom';
 
 const Section = ({ children, title }) => {
   return (
     <div className='Section'>
       <div className='Section-breadcrumb'>
-        <div className='Section-icon'>
-          <Icon className="fa-solid fa-house" />
-        </div>
-        <span>
-          &gt;
-        </span>
-        <span>Advance Guides</span>
+        <Link to="#" className='breadcrumbLink'>
+          <Icon className="fa-solid fa-house " />
+        </Link>
+        <span className='breadcrumbChevron' />
+        <p className='breadcrumbTitle'>Advanced Guides</p>
       </div>
       <p className='Section-version'>Version: 2.1.0</p>
       <h2 className='Section-title'>

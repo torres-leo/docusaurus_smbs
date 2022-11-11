@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import Icon from "../Icon";
 import Image from "../Image";
@@ -5,6 +6,8 @@ import Logo from "../../assets/brand/logo.jpeg";
 import Search from "../Search";
 import Dropdown from "../Dropdown";
 import Button from "../Button";
+import AppContext from "../context/AppProvider";
+import { useEffect } from "react";
 
 const options = [
   {
@@ -18,6 +21,16 @@ const options = [
 ];
 
 const Navbar = () => {
+  const { handleDarkMode, darkMode } = useContext(AppContext)
+
+  const renderIcon = () => {
+    if (!darkMode) return <Icon className="fa-regular fa-sun-bright icon-theme" onClick={handleDarkMode} />
+
+    return <Icon className="fa-light fa-moon icon-theme" onClick={handleDarkMode} />
+  }
+
+  useEffect(() => { console.log("darkmode:", darkMode) }, [darkMode])
+
   return (
     <nav className="Navbar">
       <ul className="Navbar-list">
@@ -63,7 +76,7 @@ const Navbar = () => {
         </li>
         <li>
           <Button className="Navbar-theme">
-            <Icon className="fa-regular fa-sun-bright" />
+            {renderIcon()}
           </Button>
         </li>
         <li>

@@ -55,19 +55,12 @@
 	}
 
 	&-theme {
-		background-color: $white;
 		border: none;
 		border-radius: 50%;
 		cursor: pointer;
-		font-size: 24px;
-		height: 32px;
 		margin-right: 12px;
+		outline: none;
 		transition: background-color $transition;
-		width: 32px;
-
-		&:hover {
-			background-color: $lightest-gray;
-		}
 	}
 
 	&-icon {
@@ -77,6 +70,18 @@
 
 		&:hover {
 			opacity: 0.6;
+		}
+	}
+
+	.icon-theme {
+		background: $white;
+		border-radius: 50%;
+		font-size: 22px;
+		padding: 2px;
+
+		&:hover {
+			background: $lightest-gray;
+			border-radius: 50%;
 		}
 	}
 }
