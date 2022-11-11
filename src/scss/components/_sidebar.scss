@@ -2,9 +2,11 @@
 	background-color: $white;
 	border-right: 1px solid $light-gray;
 	color: $gray;
+	left: 0;
+	justify-content: center;
+	position: relative;
 	width: 300px;
-	// height: 200px;
-	// z-index: -1 !important;
+
 
 	.sidebar-nav {
 		padding: 8px;
@@ -21,18 +23,41 @@
 		background-color: $white;
 		border-top: 1px solid $light-gray;
 		border-right: 1px solid $light-gray;
+		bottom: auto;
 		justify-content: center;
+		position: relative;
 
 		&::before {
 			background-image: none;
 			content: '<<';
 			color: gray;
 			font-size: 26px;
-			font-weight: 600;
-			letter-spacing: -2px;
+			font-weight: 900;
+			letter-spacing: -5px;
 			transition: 0.5s all ease;
 		}
+
+		&:hover {
+			color: $gray;
+			background-color: $item-background;
+		}
 	}
+
+	&.sidebar-narrow-unfoldable {
+
+		.sidebar-brand,
+		.sidebar-nav {
+			display: none;
+		}
+
+		.sidebar-toggler {
+			position: relative;
+			bottom: 90px;
+			border-top: 0;
+		}
+
+	}
+
 
 	&-logo {
 		height: 32px;

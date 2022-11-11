@@ -2,6 +2,8 @@
 @import 'base/reset';
 @import 'base/fonts';
 @import 'base/variables';
+@import 'base/common';
+@import 'base/darkmode';
 
 @import 'components/navbar';
 @import 'components/section';
@@ -13,5 +15,6 @@
 @import 'components/dropdown';
 @import 'components/modal';
 @import 'components/input';
+@import 'components/main';
 
 @import 'pages/docs';

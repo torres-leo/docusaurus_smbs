@@ -1,67 +1,70 @@
-.Footer{
+.Footer {
     background-color: $darkest-gray;
     display: flex;
     flex-direction: column;
     font-family: $font-primary;
     font-size: 16px;
     padding: 32px;
+    position: sticky;
+    z-index: 1032;
+    height: 463px;
 
-    &-container{
+    &-container {
         margin: auto;
         max-width: 1320px;
     }
 
-    &-links{
+    &-links {
         display: flex;
         padding: 0 16px;
         margin-bottom: 16px;
     }
 
-    &-section{
+    &-section {
         height: 222px;
         width: 330px;
     }
 
-    &-list{
+    &-list {
         list-style: none;
     }
 
-    &-title{
+    &-title {
         color: $white;
         font-weight: 700;
         margin-bottom: 16px;
     }
 
-    &-item{
+    &-item {
         color: $soft-white;
         line-height: 2;
         text-decoration: none;
         transition: color $transition;
 
-        &:hover{
+        &:hover {
             color: $orange;
             text-decoration: underline;
         }
     }
 
-    &-icon{
+    &-icon {
         margin-left: 5px;
     }
 
-    &-image{
+    &-image {
         height: 80px;
-        margin-bottom: 8px;
+        margin-bottom: 24px;
         object-fit: cover;
         opacity: 0.5;
         transition: opacity $transition;
         width: 300px;
 
-        &:hover{
+        &:hover {
             opacity: 1;
         }
     }
 
-    &-copyright{
+    &-copyright {
         color: $soft-white;
         text-align: center;
     }

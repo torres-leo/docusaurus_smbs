@@ -4,36 +4,44 @@ import Article from "../components/Article";
 import Pagination from "../components/Pagination";
 import Section from "../components/Section";
 import Icon from "../components/Icon";
+import { useCallback } from "react";
+
+const articles = [
+  {
+    title: "Architecture",
+    description: "How Docusaurus works to build your app"
+  },
+  {
+    title: "Plugins",
+    description: "Plugins are the building blocks of features in a Docusaurus 2 site. Each plugin handles its own individual feature. Plugins may work and be distributed as part of a bundle via presets."
+  },
+  {
+    title: "Routing",
+    description: "Docusaurus' routing system follows single-page application conventions: one route, one component."
+  },
+  {
+    title: "Static site generation",
+    description: "Docusaurus statically renders your React code into HTML, allowing faster load speed and better SEO."
+  },
+  {
+    title: "Client architecture",
+    description: "How the Docusaurus client is structured"
+  },
+]
 
 const Docs = () => {
+
+  const renderArticles = useCallback(() => articles.map((article, index) => <Article title={article.title} description={article.description} key={index} />), [])
+
   return (
     <div className="Docs">
-      <Section title="Advanced Tutorials">      
+      <Section title="Advanced Tutorials">
         <p className="Section-text">
           This section is not going to be very structured, but we will cover the
           following topics:
         </p>
         <div className="Section-articles">
-          <Article
-            title="Architecture"
-            description="How Docusaurus works to build your app"
-          />
-          <Article
-            title="Plugins"
-            description="Plugins are the building blocks of features in a Docusaurus 2 site. Each plugin handles its own individual feature. Plugins may work and be distributed as part of a bundle via presets."
-          />
-          <Article
-            title="Routing"
-            description="Docusaurus' routing system follows single-page application conventions: one route, one component."
-          />
-          <Article
-            title="Static site generation"
-            description="Docusaurus statically renders your React code into HTML, allowing faster load speed and better SEO."
-          />
-          <Article
-            title="Client architecture"
-            description="How the Docusaurus client is structured"
-          />
+          {renderArticles()}
         </div>
 
         <p className="Section-text">
