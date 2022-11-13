@@ -1,5 +1,5 @@
 .Dropdown {
-	background-color: $white;
+	background-color: map-get($white, base);
 	border-radius: 6.4px;
 	box-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
 	font-weight: 500;
@@ -45,7 +45,7 @@
 		&:hover {
 			background-color: $item-background;
 			.Dropdown-link {
-				color: $soft-black;
+				color: map-get($black, light);
 			}
 		}
 	}
@@ -55,7 +55,7 @@
 	}
 
 	&-link {
-		color: $soft-black;
+		color: map-get($black, light);
 		text-decoration: none;
 		transition: all $transition;
 		width: 100%;

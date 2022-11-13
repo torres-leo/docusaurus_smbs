@@ -1,6 +1,6 @@
 .Navbar {
 	align-items: center;
-	background-color: $white;
+	background-color: map-get($white, base);
 	box-shadow: $navbar-shadow;
 	display: flex;
 	justify-content: space-between;
@@ -25,7 +25,7 @@
 	}
 
 	&-items {
-		color: $soft-black;
+		color: map-get($black, light);
 		font-family: $font-primary;
 		font-size: 16px;
 		font-weight: 500;
@@ -42,7 +42,7 @@
 			padding: 8px 12px;
 
 			&:hover {
-				color: $soft-black;
+				color: map-get($black, light);
 
 				.Dropdown {
 					opacity: 1;
@@ -65,7 +65,7 @@
 	}
 
 	&-icon {
-		color: $soft-black;
+		color: map-get($black, light);
 		font-size: 24px;
 		padding: 4px 12px;
 
@@ -75,13 +75,13 @@
 	}
 
 	.icon-theme {
-		background: $white;
+		background: map-get($white, base);
 		border-radius: 50%;
 		font-size: 22px;
 		padding: 2px;
 
 		&:hover {
-			background: $lightest-gray;
+			background: map-get($gray, lighter);
 			border-radius: 50%;
 		}
 	}

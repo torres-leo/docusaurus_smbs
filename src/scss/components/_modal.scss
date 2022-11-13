@@ -1,6 +1,6 @@
 .Modal {
 	&-form {
-		background: $white;
+		background: map-get($white, base);
 		display: flex;
 		align-items: center;
 		border: 2px solid $orange;
@@ -31,7 +31,7 @@
 	}
 
 	&-element {
-		background-color: $white;
+		background-color: map-get($white, base);
 		border-radius: 4px;
 		display: flex;
 		align-items: center;
@@ -66,17 +66,17 @@
 
 		&::before {
 			border-style: solid;
-			border-width: 0.19em 0.19em 0 0;
+			border-width: 0.14em 0.14em 0 0;
 			content: '';
+			color: map-get($gray, lightest);
 			display: inline-block;
 			height: 1.6em;
 			left: 0.35em;
 			position: absolute;
-			top: -1.25em;
+			top: -1.35em;
 			transform: rotate(180deg);
 			vertical-align: top;
-			width: 0.75em;
-			color: $soft-white;
+			width: 0.95em;
 		}
 	}
 
@@ -107,7 +107,7 @@
 	}
 
 	.modal-content {
-		background-color: $soft-white;
+		background-color: map-get($white, light);
 		box-shadow: $shadow-modal;
 		width: 562px;
 	}
@@ -126,7 +126,7 @@
 	}
 
 	.modal-footer {
-		background-color: $white;
+		background-color: map-get($white, base);
 		padding: 4px;
 	}
 }

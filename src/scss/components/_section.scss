@@ -18,8 +18,8 @@
 	}
 
 	&-version {
-		background-color: $lightest-gray;
-		border: 1px solid $lightest-gray;
+		background-color: map-get($gray, lighter);
+		border: 1px solid map-get($gray, lighter);
 		border-radius: 6.4px;
 		display: inline-block;
 		font-size: 12px;
@@ -75,7 +75,7 @@
 	}
 
 	.breadcrumbLink {
-		color: $soft-black;
+		color: map-get($black, light);
 		text-decoration: none;
 		padding: 6px 12px;
 		font-size: 12px;

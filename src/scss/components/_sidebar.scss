@@ -1,28 +1,27 @@
 .Sidebar {
-	background-color: $white;
-	border-right: 1px solid $light-gray;
-	color: $gray;
+	background-color: map-get($white, base);
+	border-right: 1px solid map-get($gray, light);
+	color: map-get($gray, medium);
 	left: 0;
 	justify-content: center;
 	position: relative;
 	width: 300px;
-
 
 	.sidebar-nav {
 		padding: 8px;
 	}
 
 	.sidebar-brand {
-		background-color: $white;
+		background-color: map-get($white, base);
 		cursor: pointer;
 		justify-content: flex-start;
 		padding-left: 16px;
 	}
 
 	.sidebar-toggler {
-		background-color: $white;
-		border-top: 1px solid $light-gray;
-		border-right: 1px solid $light-gray;
+		background-color: map-get($white, base);
+		border-top: 1px solid map-get($gray, light);
+		border-right: 1px solid map-get($gray, light);
 		bottom: auto;
 		justify-content: center;
 		position: relative;
@@ -30,7 +29,7 @@
 		&::before {
 			background-image: none;
 			content: '<<';
-			color: gray;
+			color: map-get($gray, bold);
 			font-size: 26px;
 			font-weight: 900;
 			letter-spacing: -5px;
@@ -38,13 +37,12 @@
 		}
 
 		&:hover {
-			color: $gray;
+			color: map-get($gray, medium);
 			background-color: $item-background;
 		}
 	}
 
 	&.sidebar-narrow-unfoldable {
-
 		.sidebar-brand,
 		.sidebar-nav {
 			display: none;
@@ -55,9 +53,7 @@
 			bottom: 90px;
 			border-top: 0;
 		}
-
 	}
-
 
 	&-logo {
 		height: 32px;
@@ -67,11 +63,11 @@
 
 	.nav-group {
 		&.show {
-			background-color: $white;
-			color: $gray;
+			background-color: map-get($white, base);
+			color: map-get($gray, medium);
 
 			.nav-group-toggle {
-				color: $gray;
+				color: map-get($gray, medium);
 				padding-left: 12px;
 
 				&::after {
@@ -85,7 +81,7 @@
 			&::after {
 				border-style: solid;
 				border-width: 0.2em 0.2em 0px 0px;
-				color: $dark-gray;
+				color: map-get($gray, semibold);
 				content: '';
 				display: inline-block;
 				height: -0.55em;
@@ -103,7 +99,7 @@
 	}
 
 	.nav-link {
-		color: $gray;
+		color: map-get($gray, medium);
 		font-family: $font-primary;
 		font-size: 16px;
 		font-weight: 500;
@@ -111,12 +107,12 @@
 		padding: 6px 12px;
 
 		&:hover {
-			color: $gray;
+			color: map-get($gray, medium);
 			background-color: $item-background;
 		}
 
 		&.active {
-			color: $gray;
+			color: map-get($gray, medium);
 			padding-left: 12px;
 		}
 

@@ -1,71 +1,71 @@
 .Footer {
-    background-color: $darkest-gray;
-    display: flex;
-    flex-direction: column;
-    font-family: $font-primary;
-    font-size: 16px;
-    padding: 32px;
-    position: sticky;
-    z-index: 1032;
-    height: 463px;
+	background-color: map-get($gray, dark);
+	display: flex;
+	flex-direction: column;
+	font-family: $font-primary;
+	font-size: 16px;
+	padding: 32px;
+	position: sticky;
+	z-index: 1032;
+	height: 463px;
 
-    &-container {
-        margin: auto;
-        max-width: 1320px;
-    }
+	&-container {
+		margin: auto;
+		max-width: 1320px;
+	}
 
-    &-links {
-        display: flex;
-        padding: 0 16px;
-        margin-bottom: 16px;
-    }
+	&-links {
+		display: flex;
+		padding: 0 16px;
+		margin-bottom: 16px;
+	}
 
-    &-section {
-        height: 222px;
-        width: 330px;
-    }
+	&-section {
+		height: 222px;
+		width: 330px;
+	}
 
-    &-list {
-        list-style: none;
-    }
+	&-list {
+		list-style: none;
+	}
 
-    &-title {
-        color: $white;
-        font-weight: 700;
-        margin-bottom: 16px;
-    }
+	&-title {
+		color: map-get($white, base);
+		font-weight: 700;
+		margin-bottom: 16px;
+	}
 
-    &-item {
-        color: $soft-white;
-        line-height: 2;
-        text-decoration: none;
-        transition: color $transition;
+	&-item {
+		color: map-get($white, light);
+		line-height: 2;
+		text-decoration: none;
+		transition: color $transition;
 
-        &:hover {
-            color: $orange;
-            text-decoration: underline;
-        }
-    }
+		&:hover {
+			color: $orange;
+			text-decoration: underline;
+		}
+	}
 
-    &-icon {
-        margin-left: 5px;
-    }
+	&-icon {
+		margin-left: 5px;
+	}
 
-    &-image {
-        height: 80px;
-        margin-bottom: 24px;
-        object-fit: cover;
-        opacity: 0.5;
-        transition: opacity $transition;
-        width: 300px;
+	&-image {
+		height: 80px;
+		margin-bottom: 24px;
+		object-fit: cover;
+		opacity: 0.5;
+		transition: opacity $transition;
+		width: 300px;
 
-        &:hover {
-            opacity: 1;
-        }
-    }
+		&:hover {
+			opacity: 1;
+		}
+	}
 
-    &-copyright {
-        color: $soft-white;
-        text-align: center;
-    }
+	&-copyright {
+		color: map-get($white, light);
+		text-align: center;
+	}
 }

@@ -1,38 +1,38 @@
 .Article {
-  text-decoration: none;
-  max-width: 463px;
+	text-decoration: none;
+	max-width: 463px;
 
-  &-container {
-    background-color: $white;
-    border: 1px solid $lightest-gray;
-    border-radius: 12.8px;
-    box-shadow: 0 1.5px 3px 0 rgb(0 0 0 / 15%);
-    color: $medium-gray;
-    padding: 32px;
-    width: 463px;
-    transition: all 200ms ease;
+	&-container {
+		background-color: map-get($white, base);
+		border: 1px solid map-get($gray, lighter);
+		border-radius: 12.8px;
+		box-shadow: 0 1.5px 3px 0 rgb(0 0 0 / 15%);
+		color: map-get($gray, bold);
+		padding: 32px;
+		width: 463px;
+		transition: all 200ms ease;
 
-    &:hover {
-      border-color: $orange;
-      box-shadow: 0 3px 6px 0 rgb(0 0 0 / 20%);
-    }
-  }
+		&:hover {
+			border-color: $orange;
+			box-shadow: 0 3px 6px 0 rgb(0 0 0 / 20%);
+		}
+	}
 
-  &-title {
-    font-family: $font-primary;
-    font-size: 19.2px;
-    font-weight: 700;
-    line-height: 1.25;
-    margin-bottom: 16px;
-    text-decoration: none;
-  }
+	&-title {
+		font-family: $font-primary;
+		font-size: 19.2px;
+		font-weight: 700;
+		line-height: 1.25;
+		margin-bottom: 16px;
+		text-decoration: none;
+	}
 
-  &-description {
-    font-family: $font-primary;
-    font-size: 12.8px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    word-wrap: break-word;
-  }
+	&-description {
+		font-family: $font-primary;
+		font-size: 12.8px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		word-wrap: break-word;
+	}
 }

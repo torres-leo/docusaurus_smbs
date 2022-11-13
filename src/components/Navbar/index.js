@@ -63,7 +63,7 @@ const Navbar = () => {
 			<ul className='Navbar-list'>
 				<Dropdown className='Navbar-items Submenu' options={options} defaultOption={options[0].label} />
 				<li>
-					<a href='https://gitlab.com/smbs-bootcamp'>
+					<a href='https://gitlab.com/smbs-bootcamp' target='_blank' rel='noreferrer'>
 						<Icon className='fa-brands fa-square-gitlab Navbar-icon' />
 					</a>
 				</li>
