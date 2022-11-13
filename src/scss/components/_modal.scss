@@ -108,7 +108,7 @@
 
 	.modal-content {
 		background-color: map-get($white, light);
-		box-shadow: $shadow-modal;
+		box-shadow: map-get($shadow, modal);
 		width: 562px;
 	}
 

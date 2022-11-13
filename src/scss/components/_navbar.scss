@@ -1,7 +1,7 @@
 .Navbar {
 	align-items: center;
 	background-color: map-get($white, base);
-	box-shadow: $navbar-shadow;
+	box-shadow: map-get($shadow, navbar);
 	display: flex;
 	justify-content: space-between;
 	height: 60px;

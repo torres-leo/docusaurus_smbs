@@ -1,6 +1,6 @@
 .DarkMode {
 	.Navbar {
-		background-color: $background-darkmode-nav;
+		background-color: map-get($darkmode, background-nav);
 	}
 
 	.Navbar-items {
@@ -20,7 +20,7 @@
 		color: #e3e3e3;
 
 		&:hover {
-			background: $background-darkmode-moon;
+			background: map-get($darkmode, background-moon);
 		}
 	}
 
@@ -38,8 +38,8 @@
 	}
 
 	&.Modal .modal-content {
-		background-color: $background-darkmode-searchModal;
-		box-shadow: $darkmode-shadow-modal;
+		background-color: map-get($darkmode, background-primary);
+		box-shadow: map-get($darkmode, shadow-modal);
 	}
 
 	.Modal-form {
@@ -56,14 +56,30 @@
 	}
 
 	&.Modal .modal-footer {
-		background-color: $background-darkmode-nav;
+		background-color: map-get($darkmode, background-nav);
 		border-top: 0;
-		box-shadow: $darkmode-shadow-modal-footer;
+		box-shadow: map-get($darkmode, modal-footer);
 	}
 
 	&.Modal .child {
 		&::before {
 			color: map-get($gray, medium);
 		}
+	}
+
+	.Sidebar {
+		background-color: map-get($darkmode, background-primary);
+	}
+
+	.Sidebar .sidebar-brand {
+		background-color: map-get($darkmode, background-primary);
+	}
+
+	.Sidebar .nav-group.show {
+		background-color: map-get($darkmode, background-primary);
+	}
+
+	.sidebar-nav .nav-link:hover.nav-group-toggle::after {
+		background-image: none;
 	}
 }
