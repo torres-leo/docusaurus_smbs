@@ -1,132 +1,132 @@
 .Modal {
+	&-form {
+		background: $white;
+		display: flex;
+		align-items: center;
+		border: 2px solid $orange;
+		border-radius: 4px;
+		padding: 7px;
+		width: 100%;
+	}
 
-  &-form {
-    background: $white;
-    display: flex;
-    align-items: center;
-    border: 2px solid $orange;
-    padding: 7px;
-    width: 100%;
-  }
+	&-icon {
+		color: $orange;
+		font-size: 24px;
+		padding: 5px;
+	}
 
-  &-icon {
-    color: $orange;
-    font-size: 24px;
-    padding: 5px;
-  }
+	&-logo {
+		height: 33px;
+		width: 70px;
+		object-fit: cover;
+	}
 
-  &-logo {
-    height: 33px;
-    width: 70px;
-    object-fit: cover;
-  }
+	&-title {
+		color: $orange;
+		font-family: $font-primary;
+		font-size: 14px;
+		font-weight: 600;
+		margin-bottom: 5px;
+		text-transform: uppercase;
+	}
 
-  &-title {
-    color: $orange;
-    font-family: $font-primary;
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-  }
+	&-element {
+		background-color: $white;
+		border-radius: 4px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 5px;
+		padding: 15px 12px;
+		transition: all 0.2s ease-in;
 
-  &-element {
-    background-color: $white;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 5px;
-    padding: 15px 12px;
-    transition: all .2s ease-in;
+		&:hover {
+			background-color: $orange;
+			cursor: pointer;
 
-    &:hover {
-      background-color: $orange;
-      cursor: pointer;
+			.arrowIcon {
+				opacity: 1;
+			}
+		}
+	}
 
-      .arrowIcon {
-        opacity: 1;
-      }
-    }
-  }
+	&-file {
+		display: flex;
+		align-items: center;
+	}
 
-  &-file {
-    display: flex;
-    align-items: center;
-  }
+	&-fileName {
+		margin-bottom: 0;
+		margin-left: 10px;
+	}
 
-  &-fileName {
-    margin-bottom: 0;
-    margin-left: 10px;
-  }
+	.child {
+		margin-right: 28px;
+		position: relative;
 
-  .child {
-    margin-right: 28px;
-    position: relative;
+		&::before {
+			border-style: solid;
+			border-width: 0.19em 0.19em 0 0;
+			content: '';
+			display: inline-block;
+			height: 1.6em;
+			left: 0.35em;
+			position: absolute;
+			top: -1.25em;
+			transform: rotate(180deg);
+			vertical-align: top;
+			width: 0.75em;
+			color: $soft-white;
+		}
+	}
 
-    &::before {
-      border-style: solid;
-      border-width: 0.19em 0.19em 0 0;
-      content: "";
-      display: inline-block;
-      height: 1.6em;
-      left: 0.35em;
-      position: absolute;
-      top: -1.25em;
-      transform: rotate(180deg);
-      vertical-align: top;
-      width: 0.75em;
-      color: $soft-white;
-    }
-  }
+	.fileIcon,
+	.arrowIcon {
+		font-size: 20px;
+	}
 
-  .fileIcon,
-  .arrowIcon {
-    font-size: 20px;
-  }
+	.arrowIcon {
+		opacity: 0;
+	}
 
-  .arrowIcon {
-    opacity: 0;
-  }
+	.delete {
+		padding: 0 10px;
+		display: none;
 
-  .delete {
-    padding: 0 10px;
-    display: none;
+		&:hover {
+			cursor: pointer;
+		}
+	}
 
-    &:hover {
-      cursor: pointer;
-    }
-  }
+	.show {
+		display: block;
+	}
 
-  .show {
-    display: block;
-  }
+	.modal-dialog {
+		margin-top: 60px;
+	}
 
-  .modal-dialog {
-    margin-top: 60px;
-  }
+	.modal-content {
+		background-color: $soft-white;
+		box-shadow: $shadow-modal;
+		width: 562px;
+	}
 
-  .modal-content {
-    width: 562px;
-    background-color: $soft-white;
-  }
+	.modal-header {
+		border-bottom: none;
+		display: block;
 
-  .modal-header {
-    display: block;
-    border-bottom: none;
+		.btn-close {
+			display: none;
+		}
+	}
 
-    .btn-close {
-      display: none;
-    }
-  }
+	.modal-body {
+		padding-top: 0;
+	}
 
-  .modal-body {
-    padding-top: 0;
-  }
-
-  .modal-footer {
-    background-color: $white;
-    padding: 0;
-    padding-right: 5px;
-  }
+	.modal-footer {
+		background-color: $white;
+		padding: 4px;
+	}
 }

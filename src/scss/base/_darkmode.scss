@@ -1,13 +1,63 @@
 .DarkMode {
-  .Navbar {
-    background-color: $background-dark-light;
-  }
+	.Navbar {
+		background-color: $background-darkmode-nav;
+	}
 
-  .Navbar-items {
-    color: #e3e3e3;
-  }
+	.Navbar-items {
+		color: #e3e3e3;
 
-  .icon-theme {
-    background: none;
-  }
+		&.Submenu:hover {
+			color: $orange;
+		}
+	}
+
+	.Navbar-icon {
+		color: #e3e3e3;
+	}
+
+	.Navbar .icon-theme {
+		background: none;
+		color: #e3e3e3;
+
+		&:hover {
+			background: $background-darkmode-moon;
+		}
+	}
+
+	.Search {
+		background-color: $soft-black;
+
+		&:hover {
+			background-color: $soft-black;
+			color: #e3e3e3;
+		}
+	}
+
+	.Search-icon {
+		color: $white;
+	}
+
+	&.Modal .modal-content {
+		background-color: $background-darkmode-searchModal;
+		box-shadow: $darkmode-shadow-modal;
+	}
+
+	.Modal-form {
+		background: $black;
+	}
+
+	.Modal-form .Input {
+		background: $black;
+	}
+
+	.Modal-element {
+		background-color: $soft-black;
+		color: #e3e3e3;
+	}
+
+	&.Modal .modal-footer {
+		background-color: $background-darkmode-nav;
+		border-top: 0;
+		box-shadow: $darkmode-shadow-modal-footer;
+	}
 }

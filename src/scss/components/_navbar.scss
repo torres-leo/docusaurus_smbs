@@ -25,7 +25,7 @@
 	}
 
 	&-items {
-		color: $black;
+		color: $soft-black;
 		font-family: $font-primary;
 		font-size: 16px;
 		font-weight: 500;
@@ -42,7 +42,7 @@
 			padding: 8px 12px;
 
 			&:hover {
-				color: $black;
+				color: $soft-black;
 
 				.Dropdown {
 					opacity: 1;
@@ -55,6 +55,7 @@
 	}
 
 	&-theme {
+		background: none;
 		border: none;
 		border-radius: 50%;
 		cursor: pointer;
@@ -64,7 +65,7 @@
 	}
 
 	&-icon {
-		color: $black;
+		color: $soft-black;
 		font-size: 24px;
 		padding: 4px 12px;
 

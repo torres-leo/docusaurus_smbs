@@ -26,6 +26,7 @@ const AppSidebar = () => {
 				dispatch({ type: 'set', sidebarShow: visible });
 			}}
 			className='Sidebar'
+			colorScheme='dark'
 		>
 			<CSidebarBrand className='Sidebar-brand' to='/'>
 				<Image alt='logo' src={Logo} className='Sidebar-logo' />
