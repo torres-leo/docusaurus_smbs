@@ -1,9 +1,11 @@
 .Pagination {
 	background-color: map-get($white, base);
-	border: 1px solid map-get($gray, light);
+	border: 1px solid map-get($gray, lighter);
 	border-radius: 6.4px;
 	font-family: $font-primary;
-	padding: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 11px;
 	transition: border-color $transition;
 	width: 470px;
 

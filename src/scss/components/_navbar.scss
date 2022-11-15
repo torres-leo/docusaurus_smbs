@@ -81,7 +81,7 @@
 		padding: 2px;
 
 		&:hover {
-			background: map-get($gray, lighter);
+			background: map-get($gray, light);
 			border-radius: 50%;
 		}
 	}

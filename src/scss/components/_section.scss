@@ -18,8 +18,8 @@
 	}
 
 	&-version {
-		background-color: map-get($gray, lighter);
-		border: 1px solid map-get($gray, lighter);
+		background-color: map-get($gray, light);
+		border: 1px solid map-get($gray, light);
 		border-radius: 6.4px;
 		display: inline-block;
 		font-size: 12px;
@@ -74,7 +74,7 @@
 		margin-bottom: 14px;
 	}
 
-	.breadcrumbLink {
+	&-breadcrumbLink {
 		color: map-get($black, light);
 		text-decoration: none;
 		padding: 6px 12px;
@@ -91,7 +91,7 @@
 		}
 	}
 
-	.breadcrumbChevron {
+	&-breadcrumbChevron {
 		&::before {
 			border-style: solid;
 			border-width: 0.08em 0.08em 0 0;
@@ -106,7 +106,7 @@
 		}
 	}
 
-	.breadcrumbTitle {
+	&-breadcrumbTitle {
 		background: $background-opacity;
 		border-radius: 125px;
 		padding: 7px 10px;

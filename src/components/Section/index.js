@@ -6,11 +6,11 @@ const Section = ({ children, title }) => {
   return (
     <div className='Section'>
       <div className='Section-breadcrumb'>
-        <Link to="#" className='breadcrumbLink'>
+        <Link to="#" className='Section-breadcrumbLink'>
           <Icon className="fa-solid fa-house " />
         </Link>
-        <span className='breadcrumbChevron' />
-        <p className='breadcrumbTitle'>Advanced Guides</p>
+        <span className='Section-breadcrumbChevron' />
+        <p className='Section-breadcrumbTitle'>Advanced Guides</p>
       </div>
       <p className='Section-version'>Version: 2.1.0</p>
       <h2 className='Section-title'>

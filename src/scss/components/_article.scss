@@ -4,7 +4,7 @@
 
 	&-container {
 		background-color: map-get($white, base);
-		border: 1px solid map-get($gray, lighter);
+		border: 1px solid map-get($gray, light);
 		border-radius: 12.8px;
 		box-shadow: 0 1.5px 3px 0 rgb(0 0 0 / 15%);
 		color: map-get($gray, bold);

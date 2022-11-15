@@ -1,10 +1,11 @@
 .DarkMode {
 	.Navbar {
-		background-color: map-get($darkmode, background-nav);
+		background-color: map-get($darkmode, background-slate);
 	}
 
 	.Navbar-items {
-		color: #e3e3e3;
+		// color: #ae3e3e3;
+		color: map-get($gray, lightest);
 
 		&.Submenu:hover {
 			color: $orange;
@@ -12,15 +13,15 @@
 	}
 
 	.Navbar-icon {
-		color: #e3e3e3;
+		color: map-get($gray, lightest);
 	}
 
 	.Navbar .icon-theme {
 		background: none;
-		color: #e3e3e3;
+		color: map-get($gray, lightest);
 
 		&:hover {
-			background: map-get($darkmode, background-moon);
+			background: map-get($gray, bold);
 		}
 	}
 
@@ -29,7 +30,7 @@
 
 		&:hover {
 			background-color: map-get($black, light);
-			color: #e3e3e3;
+			color: map-get($gray, lightest);
 		}
 	}
 
@@ -52,11 +53,11 @@
 
 	.Modal-element {
 		background-color: map-get($black, light);
-		color: #e3e3e3;
+		color: map-get($gray, lightest);
 	}
 
 	&.Modal .modal-footer {
-		background-color: map-get($darkmode, background-nav);
+		background-color: map-get($darkmode, background-slate);
 		border-top: 0;
 		box-shadow: map-get($darkmode, modal-footer);
 	}
@@ -69,6 +70,7 @@
 
 	.Sidebar {
 		background-color: map-get($darkmode, background-primary);
+		border-right: 1px solid map-get($gray, bold);
 
 		.sidebar-brand {
 			background-color: map-get($darkmode, background-primary);
@@ -93,7 +95,7 @@
 		.nav-group.show {
 			.nav-group-items {
 				.nav-link {
-					color: map-get($gray, light);
+					color: map-get($gray, lighter);
 				}
 			}
 		}
@@ -103,7 +105,7 @@
 		}
 
 		.nav-link {
-			color: map-get($gray, light);
+			color: map-get($gray, lighter);
 
 			&:hover {
 				color: $orange;
@@ -124,7 +126,7 @@
 
 					.nav-group-items {
 						.nav-group-toggle {
-							color: map-get($gray, light);
+							color: map-get($gray, lighter);
 						}
 
 						.nav-group.show {
@@ -135,6 +137,89 @@
 					}
 				}
 			}
+		}
+
+		&.sidebar-narrow-unfoldable {
+			background-color: map-get($darkmode, background-secondary);
+
+			.sidebar-toggler {
+				width: 63px;
+				border: 0;
+			}
+		}
+
+		.sidebar-toggler {
+			background-color: map-get($darkmode, background-secondary);
+			border: 1px solid map-get($gray, bold);
+			width: 299px;
+
+			&:hover {
+				background-color: map-get($gray, semidark);
+			}
+
+			&::before {
+				color: map-get($gray, semibold);
+			}
+		}
+	}
+
+	.Docs {
+		background-color: map-get($darkmode, background-primary);
+	}
+
+	.Section {
+		&-title,
+		&-text,
+		&-editedBy {
+			color: map-get($gray, lighter);
+		}
+
+		&-breadcrumbLink {
+			color: map-get($white, base);
+
+			&:hover {
+				background: map-get($darkmode, background-secondary);
+				opacity: 1;
+			}
+		}
+
+		&-breadcrumbChevron {
+			&::before {
+				color: map-get($gray, medium);
+			}
+		}
+
+		&-breadcrumbTitle {
+			background: map-get($darkmode, background-secondary);
+			color: $orange;
+		}
+
+		&-edit {
+			&:hover {
+				color: $orange;
+			}
+		}
+	}
+
+	.Article {
+		&-container {
+			background-color: map-get($darkmode, background-slate);
+			border: 1px solid map-get($gray, bold);
+		}
+
+		&-title {
+			color: map-get($gray, lighter);
+		}
+
+		&-description {
+			color: map-get($gray, lighter);
+		}
+	}
+
+	.Pagination {
+		background-color: map-get($darkmode, background-primary);
+		&-heading {
+			color: map-get($gray, lighter);
 		}
 	}
 }

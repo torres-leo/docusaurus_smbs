@@ -1,6 +1,6 @@
 .Sidebar {
 	background-color: map-get($white, base);
-	border-right: 1px solid map-get($gray, light);
+	border-right: 1px solid map-get($gray, lighter);
 	color: map-get($gray, medium);
 	left: 0;
 	justify-content: center;
@@ -20,8 +20,8 @@
 
 	.sidebar-toggler {
 		background-color: map-get($white, base);
-		border-top: 1px solid map-get($gray, light);
-		border-right: 1px solid map-get($gray, light);
+		border-top: 1px solid map-get($gray, lighter);
+		border-right: 1px solid map-get($gray, lighter);
 		bottom: auto;
 		justify-content: center;
 		position: relative;
@@ -51,8 +51,11 @@
 
 		.sidebar-toggler {
 			position: relative;
-			bottom: 90px;
+			/* bottom: -356px; */
 			border-top: 0;
+			flex: 1;
+			align-items: center;
+			top: -63px;
 		}
 	}
 

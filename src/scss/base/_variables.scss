@@ -13,12 +13,13 @@ $black: (
 	light: #1c1e21,
 );
 $gray: (
-	light: #dadde1,
-	lighter: #ebedf0,
+	light: #ebedf0,
+	lighter: #dadde1,
 	lightest: #c4c6ca,
 	medium: #606770,
 	semibold: #525860,
 	bold: #444950,
+	semidark: #323234,
 	dark: #2b3137,
 );
 $orange: #ec9c09;
@@ -37,10 +38,10 @@ $background-opacity: rgba(0, 0, 0, 0.05);
 
 // FOR DARKMODE
 $darkmode: (
-	background-primary: #1b1b1b,
+	background-primary: #1b1b1d,
+	background-secondary: #272729,
 
-	background-nav: #242526,
-	background-moon: #444950,
+	background-slate: #242526,
 
 	shadow-modal: (
 		inset 1px 1px 0 0 #2c2e40,
