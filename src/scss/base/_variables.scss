@@ -1,15 +1,54 @@
-$black: #1C1E21;
-$lightest-gray: #EBEDF0;
-$light-gray: #DADDE1;
-$gray: #606770;
-$medium-gray: #444950;
-$dark-gray: #525860;
-$darkest-gray: #2B3137;
-$white: #FFF;
-$soft-white: #EBEDF0;
-$orange: #EC9C09;
-
-$font-primary: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+// FONTS
+$font-primary: system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Noto Sans', sans-serif,
+	BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 $font-secundary: Arial;
-$navbar-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
-$transition: 200ms cubic-bezier(0.08,0.52,0.52,1);
+
+// COLORS
+$white: (
+	base: #ffffff,
+	light: #ebedf0,
+);
+$black: (
+	base: #000000,
+	light: #1c1e21,
+);
+$gray: (
+	light: #ebedf0,
+	lighter: #dadde1,
+	lightest: #c4c6ca,
+	medium: #606770,
+	semibold: #525860,
+	bold: #444950,
+	semidark: #323234,
+	dark: #2b3137,
+);
+$orange: #ec9c09;
+
+$shadow: (
+	modal: (
+		inset 1px 1px 0 0 hsla(0, 0%, 100%, 0.5),
+		0 3px 8px 0 #555a64,
+	),
+	navbar: 0 1px 2px 0 rgba(0, 0, 0, 0.1),
+);
+
+$item-background: rgba(0, 0, 0, 0.05);
+$transition: 200ms cubic-bezier(0.08, 0.52, 0.52, 1);
+$background-opacity: rgba(0, 0, 0, 0.05);
+
+// FOR DARKMODE
+$darkmode: (
+	background-primary: #1b1b1d,
+	background-secondary: #272729,
+
+	background-slate: #242526,
+
+	shadow-modal: (
+		inset 1px 1px 0 0 #2c2e40,
+		0 3px 8px 0 #000309,
+	),
+	modal-footer: (
+		inset 0 1px 0 0 rgba(73, 76, 106, 0.5),
+		0 -4px 8px 0 rgba(0, 0, 0, 0.2),
+	),
+);

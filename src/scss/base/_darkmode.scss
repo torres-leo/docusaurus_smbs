@@ -1,0 +1,225 @@
+.DarkMode {
+	.Navbar {
+		background-color: map-get($darkmode, background-slate);
+	}
+
+	.Navbar-items {
+		// color: #ae3e3e3;
+		color: map-get($gray, lightest);
+
+		&.Submenu:hover {
+			color: $orange;
+		}
+	}
+
+	.Navbar-icon {
+		color: map-get($gray, lightest);
+	}
+
+	.Navbar .icon-theme {
+		background: none;
+		color: map-get($gray, lightest);
+
+		&:hover {
+			background: map-get($gray, bold);
+		}
+	}
+
+	.Search {
+		background-color: map-get($black, light);
+
+		&:hover {
+			background-color: map-get($black, light);
+			color: map-get($gray, lightest);
+		}
+	}
+
+	.Search-icon {
+		color: map-get($white, base);
+	}
+
+	&.Modal .modal-content {
+		background-color: map-get($darkmode, background-primary);
+		box-shadow: map-get($darkmode, shadow-modal);
+	}
+
+	.Modal-form {
+		background: map-get($black, base);
+	}
+
+	.Modal-form .Input {
+		background: map-get($black, base);
+	}
+
+	.Modal-element {
+		background-color: map-get($black, light);
+		color: map-get($gray, lightest);
+	}
+
+	&.Modal .modal-footer {
+		background-color: map-get($darkmode, background-slate);
+		border-top: 0;
+		box-shadow: map-get($darkmode, modal-footer);
+	}
+
+	&.Modal .child {
+		&::before {
+			color: map-get($gray, medium);
+		}
+	}
+
+	.Sidebar {
+		background-color: map-get($darkmode, background-primary);
+		border-right: 1px solid map-get($gray, bold);
+
+		.sidebar-brand {
+			background-color: map-get($darkmode, background-primary);
+		}
+
+		.nav-group {
+			.nav-group-toggle {
+				&::after {
+					color: map-get($gray, medium);
+				}
+			}
+		}
+
+		.nav-group.show {
+			background-color: map-get($darkmode, background-primary);
+
+			.nav-link {
+				color: $orange;
+			}
+		}
+
+		.nav-group.show {
+			.nav-group-items {
+				.nav-link {
+					color: map-get($gray, lighter);
+				}
+			}
+		}
+
+		.sidebar-nav .nav-link:hover.nav-group-toggle::after {
+			background-image: none;
+		}
+
+		.nav-link {
+			color: map-get($gray, lighter);
+
+			&:hover {
+				color: $orange;
+				background-color: map-get($gray, bold);
+			}
+		}
+
+		.nav-group {
+			.nav-group-items {
+				.nav-group.show {
+					.nav-group-toggle {
+						color: $orange;
+
+						&::after {
+							color: map-get($gray, medium);
+						}
+					}
+
+					.nav-group-items {
+						.nav-group-toggle {
+							color: map-get($gray, lighter);
+						}
+
+						.nav-group.show {
+							.nav-group-toggle {
+								color: $orange;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&.sidebar-narrow-unfoldable {
+			background-color: map-get($darkmode, background-secondary);
+
+			.sidebar-toggler {
+				width: 63px;
+				border: 0;
+			}
+		}
+
+		.sidebar-toggler {
+			background-color: map-get($darkmode, background-secondary);
+			border: 1px solid map-get($gray, bold);
+			width: 299px;
+
+			&:hover {
+				background-color: map-get($gray, semidark);
+			}
+
+			&::before {
+				color: map-get($gray, semibold);
+			}
+		}
+	}
+
+	.Docs {
+		background-color: map-get($darkmode, background-primary);
+	}
+
+	.Section {
+		&-title,
+		&-text,
+		&-editedBy {
+			color: map-get($gray, lighter);
+		}
+
+		&-breadcrumbLink {
+			color: map-get($white, base);
+
+			&:hover {
+				background: map-get($darkmode, background-secondary);
+				opacity: 1;
+			}
+		}
+
+		&-breadcrumbChevron {
+			&::before {
+				color: map-get($gray, medium);
+			}
+		}
+
+		&-breadcrumbTitle {
+			background: map-get($darkmode, background-secondary);
+			color: $orange;
+		}
+
+		&-edit {
+			&:hover {
+				color: $orange;
+			}
+		}
+	}
+
+	.Article {
+		&-container {
+			background-color: map-get($darkmode, background-slate);
+			border: 1px solid map-get($gray, bold);
+		}
+
+		&-title {
+			color: map-get($gray, lighter);
+		}
+
+		&-description {
+			color: map-get($gray, lighter);
+		}
+	}
+
+	.Pagination {
+		background-color: map-get($darkmode, background-primary);
+		&-heading {
+			color: map-get($gray, lighter);
+		}
+	}
+}
