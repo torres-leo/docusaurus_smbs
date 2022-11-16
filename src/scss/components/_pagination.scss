@@ -1,40 +1,41 @@
-.Pagination{
-    background-color: $white;
-    border: 1px solid $light-gray;
-    border-radius: 6.4px;
-    font-family: $font-primary;
-    padding: 16px;
-    transition: border-color $transition;
-    width: 470px;
+.Pagination {
+	background-color: map-get($white, base);
+	border: 1px solid map-get($gray, lighter);
+	border-radius: 6.4px;
+	font-family: $font-primary;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 11px;
+	transition: border-color $transition;
+	width: 470px;
 
-    &:hover{
-        border-color: $orange;
-    }
+	&:hover {
+		border-color: $orange;
+	}
 
-    &.right{
-        text-align: end;
-    }
+	&.right {
+		text-align: end;
+	}
 
-    &-container{
-        display: flex;
-        justify-content: space-between;
-    }
+	&-container {
+		display: flex;
+		justify-content: space-between;
+	}
 
-    &-link{
-        text-decoration: none;
-    }
+	&-link {
+		text-decoration: none;
+	}
 
-    &-title{
-        color: $orange;
-        font-size: 16px;
-        font-weight: 700;
-    }
+	&-title {
+		color: $orange;
+		font-size: 16px;
+		font-weight: 700;
+	}
 
-    &-heading{
-        color: $dark-gray;
-        font-size: 14px;
-        font-weight: 500;
-        margin-bottom: 4px;
-
-    }
+	&-heading {
+		color: map-get($gray, semibold);
+		font-size: 14px;
+		font-weight: 500;
+		margin-bottom: 4px;
+	}
 }

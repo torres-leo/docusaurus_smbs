@@ -1,11 +1,20 @@
-import Layout from "./layout";
+import { useContext } from 'react';
+import AppContext from './components/context/AppProvider';
+import Layout from './layout';
 
 function App() {
-  return (
-    <div>
-      <Layout/>
-    </div>
-  );
+	const { darkMode } = useContext(AppContext);
+
+	const darkModeClass = () => {
+		if (!darkMode) return '';
+		return 'DarkMode';
+	};
+
+	return (
+		<div className={`${darkModeClass()}`}>
+			<Layout />
+		</div>
+	);
 }
 
 export default App;
