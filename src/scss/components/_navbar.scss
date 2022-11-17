@@ -11,6 +11,10 @@
 	width: 100%;
 	z-index: 1032;
 
+	@include media-breakpoint-down(lg) {
+		display: none;
+	}
+
 	&-logo {
 		height: 36px;
 		width: 100%;

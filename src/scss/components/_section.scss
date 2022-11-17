@@ -2,7 +2,16 @@
 	font-family: $font-primary;
 	margin-left: 400px;
 	max-width: 990px;
+	width: 100%;
 	padding: 16px 16px 32px;
+
+	@include media-breakpoint-down(lg) {
+		margin-left: 0;
+	}
+
+	// @include media-breakpoint-down(md) {
+	// 	max-width: 767px;
+	// }
 
 	&-title {
 		font-weight: 700;

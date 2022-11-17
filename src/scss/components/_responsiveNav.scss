@@ -1,0 +1,39 @@
+.ResponsiveNav {
+	// background-color: map-get($white, base);
+	background-color: map-get($gray, lighter);
+	box-shadow: map-get($shadow, navbar);
+	display: none;
+	height: 3.75rem;
+	position: sticky;
+	top: 0;
+	width: 100%;
+
+	@include media-breakpoint-down(lg) {
+		display: block;
+	}
+
+	&-content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 10px 15px;
+		height: 100%;
+	}
+
+	&-left {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	&-logo {
+		width: 75px;
+		height: 28px;
+		background-size: cover;
+		object-fit: cover;
+	}
+
+	&-icon {
+		font-size: 32px;
+	}
+}

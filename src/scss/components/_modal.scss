@@ -60,6 +60,12 @@
 		margin-left: 10px;
 	}
 
+	&-result {
+		max-height: 390px;
+		overflow: hidden;
+		overflow-y: auto;
+	}
+
 	.child {
 		margin-right: 28px;
 		position: relative;
@@ -104,12 +110,20 @@
 
 	.modal-dialog {
 		margin-top: 60px;
+		max-width: none;
+		margin-left: 0;
+		margin-right: 0;
 	}
 
 	.modal-content {
 		background-color: map-get($white, light);
 		box-shadow: map-get($shadow, modal);
 		width: 562px;
+		margin: 0 auto;
+
+		@include media-breakpoint-down(md) {
+			width: 100%;
+		}
 	}
 
 	.modal-header {

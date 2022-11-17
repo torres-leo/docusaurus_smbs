@@ -11,7 +11,7 @@ const Search = () => {
 		<Fragment>
 			<Button className='Search' onClick={handleModal}>
 				<Icon className='fa-regular fa-magnifying-glass Search-icon' />
-				Search
+				<span className='Search-text'>Search</span>
 			</Button>
 			<SearchModal />
 		</Fragment>

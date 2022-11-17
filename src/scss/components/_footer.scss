@@ -4,25 +4,40 @@
 	flex-direction: column;
 	font-family: $font-primary;
 	font-size: 16px;
-	padding: 32px;
+	height: 463px;
+	padding: 32px 0;
 	position: sticky;
 	z-index: 1032;
-	height: 463px;
+	width: 100%;
+
+	@include media-breakpoint-down(lg) {
+		height: auto;
+	}
 
 	&-container {
 		margin: auto;
 		max-width: 1320px;
+		width: 100%;
 	}
 
 	&-links {
 		display: flex;
 		padding: 0 16px;
 		margin-bottom: 16px;
+
+		@include media-breakpoint-down(lg) {
+			flex-direction: column;
+			gap: 30px;
+		}
 	}
 
 	&-section {
 		height: 222px;
 		width: 330px;
+
+		@include media-breakpoint-down(lg) {
+			height: auto;
+		}
 	}
 
 	&-list {

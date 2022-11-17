@@ -7,6 +7,10 @@
 	position: relative;
 	width: 300px;
 
+	@include media-breakpoint-down(lg) {
+		display: none;
+	}
+
 	.sidebar-nav {
 		padding: 8px;
 	}

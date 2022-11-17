@@ -1,6 +1,10 @@
 .Article {
 	text-decoration: none;
-	max-width: 463px;
+	width: 463px;
+
+	@include media-breakpoint-down(lg) {
+		width: 100%;
+	}
 
 	&-container {
 		background-color: map-get($white, base);
@@ -9,7 +13,7 @@
 		box-shadow: 0 1.5px 3px 0 rgb(0 0 0 / 15%);
 		color: map-get($gray, bold);
 		padding: 32px;
-		width: 463px;
+		width: 100%;
 		transition: all 200ms ease;
 
 		&:hover {
