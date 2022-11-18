@@ -25,6 +25,13 @@
 		}
 	}
 
+	.Navbar-theme .icon-theme {
+		color: map-get($gray, lightest);
+		background-color: map-get($gray, bold);
+		padding: 2px;
+		border-radius: 100%;
+	}
+
 	.Search {
 		background-color: map-get($black, light);
 
@@ -219,6 +226,27 @@
 	.Pagination {
 		background-color: map-get($darkmode, background-primary);
 		&-heading {
+			color: map-get($gray, lighter);
+		}
+	}
+
+	.ResponsiveNav {
+		background-color: map-get($darkmode, background-slate);
+		&-icon {
+			color: map-get($white, base);
+		}
+	}
+
+	.BurgerMenu {
+		background-color: map-get($black, light);
+
+		.menu,
+		.sub-menu {
+			background-color: map-get($black, light);
+		}
+
+		.item-text,
+		.title {
 			color: map-get($gray, lighter);
 		}
 	}

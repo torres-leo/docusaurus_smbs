@@ -1,0 +1,91 @@
+.BurgerMenu {
+	overflow-y: scroll;
+	width: 80% !important;
+	z-index: 1033;
+
+	&-head {
+		box-shadow: map-get($shadow, navbar);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 10px;
+	}
+
+	&-logo {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+	}
+
+	&-image {
+		width: 80px;
+		height: 35px;
+		object-fit: cover;
+	}
+
+	&-close {
+		font-size: 26px;
+	}
+
+	&-theme {
+		background: map-get($white, base);
+		border: 0;
+		border-radius: 100%;
+		font-size: 22px;
+		padding: 2px;
+
+		&:hover {
+			background: map-get($gray, light);
+			border-radius: 50%;
+		}
+	}
+
+	.head {
+		display: none;
+	}
+
+	.menu {
+		padding-top: 0;
+		overflow-x: scroll;
+	}
+
+	.bm-item {
+		padding: 2px 10px;
+	}
+
+	.sub-item {
+		padding: 2px 10px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.sub-menu-wrap {
+		padding: 0;
+	}
+
+	.sub-menu-wrap .sub-menu .sub-menu-wrap {
+		padding-left: 30px;
+	}
+
+	.sub-menu-wrap .sub-menu .sub-menu-wrap .sub-item {
+		padding-left: 2px;
+	}
+
+	.title,
+	.item-text {
+		font-family: $font-primary;
+		font-weight: 500;
+	}
+
+	.sub-menu .bm-item {
+		padding: 0;
+	}
+
+	.sub-menu-wrap .arrow {
+		transform: rotate(272deg);
+	}
+
+	.sub-menu-wrap .sub-menu:active:checked .arrow {
+		transform: rotate(0deg);
+	}
+}

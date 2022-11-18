@@ -6,6 +6,7 @@ const AppContext = createContext();
 const ContextProvider = ({ children }) => {
 	const [visible, setVisible] = useState(false);
 	const [darkMode, setDarkMode] = useState(false);
+	const [openMenu, setOpenMenu] = useState(false);
 
 	const handleModal = () => {
 		setVisible(!visible);
@@ -15,8 +16,13 @@ const ContextProvider = ({ children }) => {
 		setDarkMode(!darkMode);
 	};
 
+	const handleBurgerMenu = () => {
+		setOpenMenu(!openMenu);
+	};
+
 	return (
-		<AppContext.Provider value={{ visible, setVisible, handleModal, handleDarkMode, darkMode }}>
+		<AppContext.Provider
+			value={{ visible, setVisible, handleModal, handleDarkMode, darkMode, openMenu, setOpenMenu, handleBurgerMenu }}>
 			{children}
 		</AppContext.Provider>
 	);

@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import AppContext from './components/context/AppProvider';
 import Layout from './layout';
+import 'burger-menu/lib/index.css';
 
 function App() {
 	const { darkMode } = useContext(AppContext);

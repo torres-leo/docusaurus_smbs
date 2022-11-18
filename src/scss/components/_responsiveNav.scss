@@ -1,6 +1,6 @@
 .ResponsiveNav {
-	// background-color: map-get($white, base);
-	background-color: map-get($gray, lighter);
+	background-color: map-get($white, base);
+	// background-color: map-get($gray, lighter);
 	box-shadow: map-get($shadow, navbar);
 	display: none;
 	height: 3.75rem;
