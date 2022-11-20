@@ -9,7 +9,7 @@ const Section = ({ children, title }) => {
 				<Link to='#' className='Section-breadcrumbLink'>
 					<Icon className='fa-solid fa-house ' />
 				</Link>
-				<span className='Section-breadcrumbChevron' />
+				<Icon className='fa-solid fa-chevron-right' />
 				<p className='Section-breadcrumbTitle'>Advanced Guides</p>
 			</div>
 			<p className='Section-version'>Version: 2.1.0</p>

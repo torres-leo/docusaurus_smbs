@@ -1,6 +1,5 @@
 .ResponsiveNav {
 	background-color: map-get($white, base);
-	// background-color: map-get($gray, lighter);
 	box-shadow: map-get($shadow, navbar);
 	display: none;
 	height: 3.75rem;
@@ -27,13 +26,48 @@
 	}
 
 	&-logo {
-		width: 75px;
-		height: 28px;
+		width: 85px;
+		height: 34px;
 		background-size: cover;
 		object-fit: cover;
+
+		&.menu {
+			width: 125px;
+		}
 	}
 
 	&-icon {
 		font-size: 32px;
+	}
+
+	&-head {
+		display: flex;
+		align-items: center;
+	}
+
+	&-theme {
+		background: none;
+		border: none;
+		border-radius: 50%;
+		font-size: 22px;
+		outline: none;
+		transition: background-color $transition;
+	}
+
+	&-close {
+		font-size: 26px;
+	}
+
+	.offcanvas {
+		width: 80%;
+	}
+
+	.offcanvas-start {
+		border-right: 0;
+	}
+
+	.offcanvas-body {
+		padding: 0;
+		overflow-y: hidden;
 	}
 }

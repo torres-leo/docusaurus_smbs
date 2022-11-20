@@ -7,6 +7,19 @@
 	position: relative;
 	width: 300px;
 
+	&.responsive {
+		border-right: 0;
+		display: block;
+		height: 100vh;
+		margin-right: 0;
+		width: 100%;
+		z-index: 1034;
+	}
+
+	&.responsive .sidebar-brand {
+		display: none;
+	}
+
 	@include media-breakpoint-down(lg) {
 		display: none;
 	}

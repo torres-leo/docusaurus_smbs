@@ -4,7 +4,7 @@ import Image from '../Image';
 import Logo from '../../assets/brand/logo.jpeg';
 import Search from '../Search';
 import AppContext from '../context/AppProvider';
-import BurgerMenu from '../BurgerMenu';
+import BurgerCore from '../BurgerCore';
 
 const ResponsiveNav = () => {
 	const { handleBurgerMenu } = useContext(AppContext);
@@ -17,7 +17,7 @@ const ResponsiveNav = () => {
 				</div>
 				<Search />
 			</div>
-			<BurgerMenu />
+			<BurgerCore />
 		</nav>
 	);
 };
